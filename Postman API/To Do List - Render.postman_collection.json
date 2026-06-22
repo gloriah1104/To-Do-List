@@ -1,0 +1,135 @@
+{
+  "info": {
+    "_postman_id": "dc344b3b-a2df-49a4-b56d-e8f1f4e549c9",
+    "name": "To Do List - Render",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "55813026",
+    "_collection_link": "https://go.postman.co/collection/55813026-dc344b3b-a2df-49a4-b56d-e8f1f4e549c9?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Get all tasks",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://to-do-list-niit.onrender.com/todos",
+          "protocol": "https",
+          "host": [
+            "to-do-list-niit",
+            "onrender",
+            "com"
+          ],
+          "path": [
+            "todos"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Add a new task",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"title\": \"今天要刷牙\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://to-do-list-niit.onrender.com/todos",
+          "protocol": "https",
+          "host": [
+            "to-do-list-niit",
+            "onrender",
+            "com"
+          ],
+          "path": [
+            "todos"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Delete all tasks",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"title\": \"今天要刷牙\"\r\n}"
+        },
+        "url": {
+          "raw": "https://to-do-list-niit.onrender.com/todos",
+          "protocol": "https",
+          "host": [
+            "to-do-list-niit",
+            "onrender",
+            "com"
+          ],
+          "path": [
+            "todos"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Delete a task",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"title\": \"今天要刷牙\"\r\n}"
+        },
+        "url": {
+          "raw": "https://to-do-list-niit.onrender.com/todos",
+          "protocol": "https",
+          "host": [
+            "to-do-list-niit",
+            "onrender",
+            "com"
+          ],
+          "path": [
+            "todos"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Edit a task",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "PATCH",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"name\":\"修改內容1\"\r\n}"
+        },
+        "url": {
+          "raw": "https://to-do-list-niit.onrender.com/todos",
+          "protocol": "https",
+          "host": [
+            "to-do-list-niit",
+            "onrender",
+            "com"
+          ],
+          "path": [
+            "todos"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
