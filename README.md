@@ -1,8 +1,16 @@
+-----------------------------------------------------------------
+#　Todolist RESTful API 
+-----------------------------------------------------------------
+
+●   POSTMAN API建置 ( GET, POST, OPTIONS, DELETE, PATCH )
+
+●   RENDER 雲端部署平台
+
 <img width="1077" height="2342" alt="image" src="https://github.com/user-attachments/assets/9e60ccaf-bac6-4aff-91f8-3bf50894964b" />
 <img width="2897" height="3486" alt="image" src="https://github.com/user-attachments/assets/de1152d2-d2c8-4425-b362-c6a681d79620" />
 
 -----------------------------------------------------------------
-## 本機 POST 成功，Render POST 失敗
+## 作業問題：本機 POST 成功，Render POST 失敗
 -----------------------------------------------------------------
 
 ### 第一步： errorHandle 在兩個地方被呼叫，都跟 body 有關，確認 body 有沒有收到：
