@@ -9,9 +9,21 @@
   "item": [
     {
       "name": "Get all tasks",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
       "request": {
         "method": "GET",
         "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
         "url": {
           "raw": "https://to-do-list-niit.onrender.com/todos",
           "protocol": "https",
@@ -34,7 +46,7 @@
         "header": [],
         "body": {
           "mode": "raw",
-          "raw": "{\r\n    \"title\": \"今天要刷牙\"\r\n}",
+          "raw": "{\r\n    \"title\": \"今天要刷牙1\"\r\n}",
           "options": {
             "raw": {
               "language": "json"
@@ -63,7 +75,7 @@
         "header": [],
         "body": {
           "mode": "raw",
-          "raw": "{\r\n    \"title\": \"今天要刷牙\"\r\n}"
+          "raw": ""
         },
         "url": {
           "raw": "https://to-do-list-niit.onrender.com/todos",
@@ -87,7 +99,7 @@
         "header": [],
         "body": {
           "mode": "raw",
-          "raw": "{\r\n    \"title\": \"今天要刷牙\"\r\n}"
+          "raw": ""
         },
         "url": {
           "raw": "https://to-do-list-niit.onrender.com/todos",
@@ -114,7 +126,7 @@
         "header": [],
         "body": {
           "mode": "raw",
-          "raw": "{\r\n    \"name\":\"修改內容1\"\r\n}"
+          "raw": "{\r\n    \"title\":\"修改內容1\"\r\n}"
         },
         "url": {
           "raw": "https://to-do-list-niit.onrender.com/todos",
