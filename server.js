@@ -21,7 +21,7 @@ const requestListener = (req, res) => {
     // ✅ 所有路由邏輯都在 end 事件裡，確保 body 收集完畢才處理
     req.on("end", () => {
         console.log(req.url, req.method);
-        console.log("收到 body:", body);
+        //console.log("收到 body:", body); 測試錯誤訊息用
 
         // GET /todos
         if (req.url === "/todos" && req.method === "GET") {
@@ -45,10 +45,10 @@ const requestListener = (req, res) => {
                     res.end();
                 } else {
                     errorHandle(res);
-                    console.log("進了 else，有title ");
+                    console.log("進了 else，有title "); //測試錯誤訊息用
                 }
             } catch (error) {
-                console.log("進了 catch，error 是:", error.message.error.name.error.stack);
+                console.log("進了 catch，error 是:", error.message); //error.message 可以顯示錯誤訊息
                 errorHandle(res);
             }
 
@@ -59,8 +59,8 @@ const requestListener = (req, res) => {
             res.write(JSON.stringify({ "status": "success", "data": todos }));
             res.end();
 
-        // DELETE /todos/:id（刪除特定）
-        } else if (req.url.startsWith("/todos/") && req.method === "DELETE") {
+        // DELETE /todos:id（刪除特定）
+        } else if (req.url.startsWith("/todos") && req.method === "DELETE") {
             const id = req.url.split("/").pop();
             const index = todos.findIndex(element => element.id === id);
             if (index !== -1) {
@@ -73,7 +73,7 @@ const requestListener = (req, res) => {
             }
 
         // PATCH /todos/:id（修改特定）
-        } else if (req.url.startsWith("/todos/") && req.method === "PATCH") {
+        } else if (req.url.startsWith("/todos") && req.method === "PATCH") {
             try {
                 const title = JSON.parse(body).title;
                 const id = req.url.split("/").pop();
